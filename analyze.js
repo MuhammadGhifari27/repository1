@@ -10,7 +10,7 @@ let data = [];
     const API_URL = "https://digital-mind-backend.vercel.app";
 */
 
-const API_URL = "https://digital-mind-backend.vercel.app";
+const API_URL = "https://digital-mind-backend.vercel.app/";
 
 /* ===============================
    KLASIFIKASI AKTIVITAS
