@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Mind Balance Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="header">
+            <div class="logo-circle">🧠</div>
+            <h1>Digital Mind Balance Analyzer</h1>
+            <p>
+                Catat aktivitas harianmu untuk menganalisis keseimbangan antara
+                aktivitas digital, produktivitas, dan pemulihan mental.
+            </p>
+        </header>
+
+        <section class="input-card">
+            <h2>Tambah Aktivitas</h2>
+
+            <div class="input-group">
+                <input id="act" type="text" placeholder="Contoh: TikTok / Belajar / Meditasi">
+                <input id="min" type="number" placeholder="Menit">
+
+                <button onclick="tambah()" class="btn-primary">
+                    Tambah
+                </button>
+            </div>
+        </section>
+
+        <section class="summary-card">
+            <p id="total">Total: 0 menit</p>
+        </section>
+
+        <section class="content-grid">
+
+            <div class="card">
+                <h2>📋 Aktivitas</h2>
+                <div id="list">Belum ada data</div>
+            </div>
+
+            <div class="card">
+                <h2>🧠 Status Mental</h2>
+
+                <button onclick="analisis()" class="btn-secondary">
+                    Analisis Kondisi Mental
+                </button>
+
+                <div id="result">Belum dianalisis</div>
+            </div>
+
+        </section>
+
+        <section class="image-card">
+            <h2>✨ Visualisasi Pikiran</h2>
+
+            <button onclick="generateImage()" class="btn-primary">
+                Generate Gambar Otak
+            </button>
+
+            <div id="status">Belum ada gambar</div>
+
+            <img id="img" alt="Visualisasi Otak">
+        </section>
+
+    </div>
+
+    <script src="analyze.js"></script>
+
+</body>
+
+</html>
